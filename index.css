@@ -1,0 +1,104 @@
+/*
+Header:
+1.) The default display value of the header element is “block”.
+2.) The default value of flex-direction is “row”.
+3.) For the header element defined above the cross axis is the y axis
+
+Button:
+1.) The button is in a hover state when the cursor is over the button.
+2.) The button is in an active state while it is being clicked.
+3.) <button class="notIcon"></button>
+4.) The boarder property is shorthand for using a universal width, color, and style for all four border boundries of a box.
+
+browse.css:
+5.) We use a div to wrap each dt and dd beacuse we want to separate each dt and dd pair visully in boxes, and because divs are best used for this purpose, we use divs here.
+
+create.css:
+2.) visibility: hidden hides elements without changing their layouts while display:none turns off the layout of an element and doesn't render it on the page. Here we want to use visibility:hidden so that the button element still renders in and can be clicked and manipulated even if it can't be seen.
+
+*/
+
+h1{
+    margin-left: 2rem;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    height: 14rem;
+    width: 14rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+ 
+li a{
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    background: var(--myGray);
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+li a:visited
+{
+    color:black;
+}
+
+li h2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+header{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.icon{
+    color: #544b64; /* any text should have this color */
+    background: none; /* don't show any background */
+    border: none; /* remove the default border */
+    text-align: center; /* any text (or svgs) should be in the center */
+    width: 3rem; /* width = 3 * root element's font size */
+    height: 3rem; /* height = to 3 * root element's font size */
+    border-radius: 50%; /* height = width, so 50% makes this circular */
+    padding: 0.5rem; /* the space b/w edge of button & text = 0.5rem */
+    margin-right: 2rem;
+}
+
+/* some SVGs don't have borders, so use these styles for those SVGs*/
+button.icon.with-border {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #544b64;
+    }
+    
+button.icon:hover:not([disabled]) {
+    background: #eee;
+}
+    
+button.icon:active:not([disabled]) {
+    background: #ccc;
+}

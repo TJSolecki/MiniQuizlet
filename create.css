@@ -1,0 +1,176 @@
+.title-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+button{
+    border-width: 0;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+header button{
+    background-color: #ccc;
+}
+
+header button:hover{
+    background-color: #aaa;
+}
+
+header button:active{
+    background-color: #666;
+}
+
+form{
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset{
+    border-radius: 5px;
+    border-color: #eee;
+    position: relative;
+    padding: 0;
+}
+
+fieldset:nth-child(1)
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+fieldset:nth-child(1) span.input-wrapper{
+    padding-left: 2rem;
+}
+
+fieldset h2{
+    position: absolute;
+    top: -2.5rem;
+    font-size: 1rem;
+    color: #aaa;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+span.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin:1rem;
+}
+
+fieldset:nth-child(2)
+{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+fieldset:nth-child(2) .upload-wrapper{
+    width:20px;
+    position:absolute;
+    right:0.5rem;
+    top:-1.5rem;
+}
+
+fieldset:nth-child(2) .upload-wrapper input{
+    width:20px;
+    height: 20px;
+    position:absolute;
+    left: 0;
+    visibility: hidden;
+}
+
+fieldset:nth-child(2) .card-input-wrapper{
+    display:flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 2rem;
+    justify-content: flex-start;
+}
+
+fieldset:nth-child(2) .card-input-wrapper button{
+    background-color: #14CC60;
+    color: white;
+}
+
+fieldset:nth-child(2) .card-input-wrapper button:hover{
+    background-color: #09A129;
+}
+
+fieldset:nth-child(2) .card-input-wrapper button:active{
+    background-color: #036D19;
+}
+
+fieldset:nth-child(2) dl{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: column;
+}
+
+#empty-placeholder{
+    padding-top:5rem;
+    padding-bottom:5rem;
+    padding-left:3rem;
+    padding-right: 3rem;
+    background-color: #eee;
+    border: 5px dashed #333;
+    border-radius: 8px;
+}
+
+.input-wrapper input:focus + label{
+    color:#14CC60;
+}
+
+.input-wrapper input{
+    border-width: 0px;
+    border-bottom-width: 2px;
+    border-radius: 0px;
+    border-color:#aaa;
+    outline: none;
+}
+
+#card{
+    border-radius: 8px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding:1rem;
+    width:19rem;
+    height:11rem;
+    margin-top:0.25rem;
+    margin-bottom:0.25rem;
+}
+
+dl{
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+dd{
+    text-align: left;
+    margin-inline-start: 0px;
+    margin-top: 1em;
+    
+}
+
+dt{
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.input-wrapper label
+{
+    color:#aaa;
+}
+
+.input-wrapper input:focus{
+    border-color: #14CC60;
+}

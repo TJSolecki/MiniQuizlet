@@ -1,0 +1,145 @@
+
+.title-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    margin-left: 1rem;
+}
+
+
+dl{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    margin: 0px;
+    align-items: center;
+}
+
+dl > div{
+    height: 25rem;
+    width: 40rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--myGray);
+    border: none;
+    border-radius: 8px;
+}
+
+#createDiv {
+   position: relative;
+}
+
+#buttonDiv {
+    position: absolute;
+    right:1rem;
+    bottom:1rem;
+    display: flex;
+    flex-direction: row;
+}
+#done, #cancel
+{
+    border-width: 0;
+    outline:none;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+#done{
+    background-color: #14CC60;
+    color: white;
+}
+
+#done:hover{
+    background-color: #09A129;
+}
+
+#done:active{
+    background-color: #036D19;
+}
+
+#cancel{
+    background-color: #999;
+    color: black;
+    margin-right: 0.5rem;
+}
+
+#cancel:hover{
+    background-color: #777;
+}
+
+#cancel:active{
+    background-color: #444;
+}
+
+#termInput, #defInput {
+    border-width: 0;
+    outline:none;
+    margin-bottom: 1rem;
+    background-color: var(--myGray);
+    box-sizing: border-box;
+}
+
+#termInput
+{
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+#defInput{
+    font-size: 1.05rem;
+}
+
+#termInput:focus {
+    border-bottom-width: 0.1rem;
+}
+#defInput:focus {
+    border-bottom-width: 0.1rem;
+}
+
+dd{
+    text-align: left;
+    margin-inline-start: 0px;
+    margin-top: 1em;
+    
+}
+
+dt{
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+button.icon{
+    color: #544b64; /* any text should have this color */
+    background: none; /* don't show any background */
+    border: none; /* remove the default border */
+    text-align: center; /* any text (or svgs) should be in the center */
+    width: 3rem; /* width = 3 * root element's font size */
+    height: 3rem; /* height = to 3 * root element's font size */
+    border-radius: 50%; /* height = width, so 50% makes this circular */
+    padding: 0.5rem; /* the space b/w edge of button & text = 0.5rem */
+    margin-right: 2rem;
+}
+
+/* some SVGs don't have borders, so use these styles for those SVGs*/
+button.icon.with-border {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #544b64;
+    }
+    
+button.icon:hover:not([disabled]) {
+    background: #eee;
+}
+    
+button.icon:active:not([disabled]) {
+    background: #ccc;
+}

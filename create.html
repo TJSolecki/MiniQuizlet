@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create | Lab 3 | COEN 161</title>
+    <script src="storage.js" async defer></script>
+    <script src="create.js" async defer></script>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="create.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="title-wrapper">
+          <button class="icon">
+            <a href="./index.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </a>
+          </button>
+          <h1>Create new Flashcard Set</h1>
+        </div>
+        <div class="form-actions">
+          <button class="secondary" type="submit" form="create-set-form">
+            Create
+          </button>
+        </div>
+      </header>
+      <form id="create-set-form" method="post" action="http://localhost:8090">
+        <fieldset id="set-metadata">
+          <h2>Set Information</h2>
+          <span class="input-wrapper">
+            <input
+              id="name"
+              type="text"
+              placeholder=" "
+              autocomplete="off"
+              required
+            />
+            <label for="name">Set Name</label>
+          </span>
+          <span class="input-wrapper">
+            <input
+              id="course"
+              type="text"
+              placeholder=" "
+              autocomplete="off"
+              require
+            />
+            <label for="course">Course</label>
+          </span>
+        </fieldset>
+        <fieldset id="card-metadata">
+          <h2>Flashcard Information</h2>
+          <div class="upload-wrapper">
+          <label for="upload-input" id="upload-label">
+            <div class="loader hidden"></div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5"
+              />
+            </svg>
+          </label>
+
+          <input type="file" class="icon" id="upload-input" accept=".csv" />
+          </div>
+          <div class="card-input-wrapper">
+            <span class="input-wrapper">
+              <input
+                id="word-input"
+                type="text"
+                placeholder=" "
+                autocomplete="off"
+              />
+              <label for="word-input">Word</label>
+            </span>
+            <span class="input-wrapper">
+              <input
+                id="definition-input"
+                type="text"
+                placeholder=" "
+                autocomplete="off"
+              />
+              <label for="definition-input">Definition</label>
+            </span>
+            <button id="add-card-button" class="primary" type="button">Add Card</button>
+          </div>
+          <dl>
+            <div id="empty-placeholder">Add a card and it'll show up here</div>
+            
+          </dl>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
