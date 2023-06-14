@@ -3,3 +3,4 @@ This was a project I made to help me improve my front-end knowledge and skills. 
 
 # Demo
  ![A demonstartion of the final website design and functionality](MiniQuizletDemo.gif)
+ You can try out the project at the link here: https://mini-quizlet.vercel.app/index.html
